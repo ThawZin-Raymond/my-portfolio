@@ -27,20 +27,20 @@
 <body>
   <div class="container">
     <header class="d-flex justify-content-center py-1 mb-2">
-      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis ">
-        <span class="fs-4 thawzin-custon">Thaw Zin<img src="./images/technician.png" alt="technician image"
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto">
+        <span class=" thawzin-custon">Thaw Zin<img src="./images/technician.png" alt="technician image"
             height="35px" style="margin-bottom: 10px; margin-left: 20px" />
         </span>
       </a>
       <!-- <div class="navi-bar"> -->
         <ul class="nav nav-pills">
           <li class="nav-item">
-            <a href="#home_section" class="nav-link text-body-secondary" aria-current="page">Home</a>
+            <a href="#home_section" class="nav-link" aria-current="page">Home</a>
           </li>
-          <li class="nav-item"><a href="#about-me-section" class="nav-link text-body-secondary">About me</a></li>
-          <li class="nav-item"><a href="#skillset-section" class="nav-link text-body-secondary">Skillset</a></li>
-          <li class="nav-item"><a href="#projects-section" class="nav-link text-body-secondary">Projects</a></li>
-          <li class="nav-item"><a href="#contact-me-section" class="nav-link text-body-secondary">Contact me</a></li>
+          <li class="nav-item"><a href="#about-me-section" class="nav-link ">About me</a></li>
+          <li class="nav-item"><a href="#skillset-section" class="nav-link ">Skillset</a></li>
+          <li class="nav-item"><a href="#projects-section" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#contact-me-section" class="nav-link ">Contact me</a></li>
         </ul>
         <img src="./images/moon.png" class="ld-mode-icon" alt="moon icon">
       <!-- </div> -->
@@ -50,11 +50,11 @@
       <div class="home-section d-flex flex-column align-items-center justify-content-center text-center">
         <img class="d-block mx-auto mb-4 rounded-circle thawzin-img-size" src="./images/thawzin.jpeg"
           alt="thawzin image" />
-        <h1 class="display-5 fw-bold text-body-emphasis">
+        <h1 class="display-6 fw-bold text-main-custom">
           Hello, I am <span class="auto-text-1"></span>
         </h1>
         <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">
+          <p class="lead mt-3 mb-5">
             Driven by a passion for technology and innovation, I am dedicated to
             using my expanding technical skills for meaningful impact. Beyond
             coding 👨🏻‍💻, I relish competitive gaming 🎮 , global travel ✈️, and
@@ -66,16 +66,16 @@
           <button class="btn btn-color-1" onclick="window.open('/Assets/resume.pdf')">
             Download CV
           </button>
-          <button class="btn btn-color-2" onclick="location.href='./#contact-me-section'">
+          <button class="btn btn-color-2" on3click="location.href='./#contact-me-section'">
             Contact Info
           </button>
         </div>
-        <div id="socials-container">
+        <div class= "socials-container">
           <a href="https://www.linkedin.com/in/thaw-zin-7103a1234/" target="_blank">
-            <img src="./images/linkedin.png" alt="My LinkedIn profile" class="icon" />
+            <img src="./images/linkedin.png" alt="My LinkedIn profile" class="social-icon" />
           </a>
           <a href="https://github.com/ThawZin-Raymond" target="_blank">
-            <img src="./images/github.png" alt="My Github profile" class="icon" />
+            <img src="./images/github.png" alt="My Github profile" class="social-icon" />
           </a>
 
         </div>
@@ -91,10 +91,10 @@
         <div class="col-md-6 mx-auto">
           <p class="lead text-center content-text">
             My journey into programming began with self-learning the basics, which took a significant turn when I moved
-            to Australia. My passion for technology grew stronger, leading to a Bachelor of Science in Information
-            Technology degree from the University of Technology Sydney (UTS). As a dedicated graduate, I am committed to
+            to Australia. My passion for technology grew stronger, leading to a <strong>Bachelor of Science in Information
+            Technology degree</strong> from the University of Technology Sydney (UTS). As a dedicated graduate, I am committed to
             continuous education and self-improvement in programming. I am currently engaged in personal projects to
-            enhance my programming abilities, aiming for further growth in the field of software development.
+            enhance my programming abilities, aiming for further growth in <strong>the field of software development</strong>.
           </p>
         </div>
 
@@ -344,7 +344,7 @@
 <!-- Type Animation -->
 <script>
   var typed = new Typed(".auto-text-1", {
-    strings: ["Thaw Zin", "a Programmer", "a Gamer", "a Photographer",],
+    strings: [" Thaw Zin", " a Programmer", " a Gamer", " a Photographer",],
     typeSpeed: 150,
     backSpeed: 50,
     loop: true
