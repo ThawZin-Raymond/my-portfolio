@@ -10,6 +10,7 @@ body {
   font-family: 700;
   
 }
+
 .nav-link {
   color: black;
   font-size: 1.5em;
@@ -287,6 +288,12 @@ a{
 }
 /* Icon */
 
+.ld-mode-icon {
+  cursor: pointer;
+  width:  1.5rem;
+  height:  1.5rem;
+  margin: 0.8rem;
+}
 .icon {
   cursor: pointer;
   height: 2.5rem;
