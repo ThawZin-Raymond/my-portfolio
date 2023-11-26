@@ -30,5 +30,14 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   
     // Your other JavaScript code can go here...
+    var scrollAnimation = document.querySelector(".scroll-animation");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY === 0) {
+      scrollAnimation.style.display = "block";
+    } else {
+      scrollAnimation.style.display = "none";
+    }
+  });
   });
   
