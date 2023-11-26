@@ -1,13 +1,32 @@
 :root {
-  --primary-shadow: 0px 4px 8px #284b63;
-  --primary-color: rgb(255, 255, 255);
-  --secondary-color: rgb(0, 44, 56);
-  --tertiary-color: rgb(0, 0, 0);
-  --normal-font-color: rgb(0, 44, 56);
+  /* --primary-shadow: 0px 4px 8px #284b63;
+  --primary-color: #246a73;
+  --secondary-color: #edeec9;
+  --tertiary-color: #ffffff;
+  --main-font-color: #edeec9;
+  --normal-font-color: #f3dfc1;
+  --input-color: #ffffff;
+  --input-focus-color: #d9ed92;
+  --animation-color: #b2de02; */
+  --primary-color: #ffffff;
+  --secondary-color: #002C38;
+  --tertiary-color: #000000;
+  --main-font-color: #002C38;
+  --normal-font-color: #000000;
+  --input-color: #ffffff;
+  --input-focus-color: #d9ed92;
+  --animation-color: #b2de02;
 }
 .dark-theme {
-  --primary-color: rgb(255, 255, 255);
-  --secondary-color: rgb(0, 44, 56);
+  --primary-shadow: 0px 4px 8px #284b63;
+  --primary-color: #246a73;
+  --secondary-color: #edeec9;
+  --tertiary-color: #fff;
+  --main-font-color: #edeec9;
+  --normal-font-color: #f3dfc1;
+  --input-color: #fff;
+  --input-focus-color: #d9ed92;
+  --animation-color: #b2de02;
 }
 body {
   background-color: var(--primary-color);
@@ -106,7 +125,7 @@ a {
   margin-bottom: 8rem;
 }
 .skillset-title {
-  color: rgb(85, 85, 85);
+  color: var(--normal-font-color);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -181,18 +200,15 @@ a {
   box-shadow: var(--primary-shadow);
 }
 .contact__input {
-  background: var(--primary-color); /* Adjust the opacity as needed */
+  background: var(--input-color); /* Adjust the opacity as needed */
   border: 1px solid #ccc; /* Add a border for better visibility */
   border-radius: 0.5rem; /* Optional: Add some border-radius for a rounded look */
   padding: 0.5rem; /* Optional: Add some padding for spacing */
   transition: background 0.3s ease-in-out; /* Add a smooth background transition */
 }
 .contact__input:focus {
-  background: rgba(
-    var(--primary-color),
-    0.7
-  ); /* Adjust the opacity when focused */
-  border-color: #57cc99; /* Change border color on focus */
+  background: var(--input-focus-color); /* Adjust the opacity when focused */
+  border-color: white; /* Change border color on focus */
 }
 .form-group {
   margin-bottom: 1.5rem;
@@ -249,7 +265,7 @@ a {
 }
 
 .btn-color-2:hover {
-  background: var(-tertiary-color);
+  background: var(--tertiary-color);
 }
 
 .btn-color-1 {
@@ -263,34 +279,28 @@ a {
 .btn-container {
   gap: 1rem;
 }
-.btn-custom {
+.btn-3 {
   font-weight: 500;
   transition: width 0.3s ease, border-color 0.3s ease; /* Add transition for width and border-color change */
   padding: 0.8rem;
   width: 10rem;
-  border: 1px solid var(-tertiary-color); /* Black border */
+  border: 1px solid var(--tertiary-color); /* Black border */
+  border-radius: 2rem;
   background-color: var(--primary-color); /* White background */
-  color: var(-tertiary-color); /* Black text color */
+  color: var(--tertiary-color); /* Black text color */
 }
 
-.btn-custom:hover {
+.btn-3:hover {
   cursor: pointer;
   width: 12rem; /* Increase width on hover */
-  border-color: var(-tertiary-color); /* Change border color on hover */
-}
-.btn-3 {
-  font-weight: 500;
-  transition: width 0.3s ease;
-  padding: 0.8rem;
-  width: 10rem;
-  border-radius: 2rem;
+  background-color: var(--primary-color); /* Change border color on hover */
 }
 /* Icon */
 
 .ld-mode-icon {
   cursor: pointer;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 1.8rem;
+  height: 1.8rem;
   margin: 0.8rem;
 }
 .social-icon {
@@ -325,12 +335,15 @@ a {
   color: var(--normal-font-color)
 }
 .custom-text-h4 {
-  color: var(--secondary-color);
+  color: var(--normal-font-color);
+}
+.normal-text{
+  color: var(--normal-font-color);
 }
 
 .auto-text-1,
 .auto-text-2 {
-  color: rgb(147, 212, 6);
+  color: var(--animation-color);
 }
 .text-main-custom {
   color: var(--normal-font-color);
