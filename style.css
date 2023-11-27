@@ -418,6 +418,10 @@ header {
   height: 2.5rem;
   margin: 0.4rem;
 }
+.mouse-icon {
+  height: 2.5rem;
+  margin: 0.4rem;
+}
 .footer-icon {
   cursor: pointer;
   height: 1.5rem;
@@ -504,10 +508,6 @@ header {
   animation: scrollAnimation 3s ease infinite;
 }
 
-.scroll-animation i {
-  font-size: 24px;
-}
-
 @keyframes scrollAnimation {
   0%, 100% {
     transform: translate(-50%, -50%);
@@ -518,6 +518,7 @@ header {
     opacity: 0.1;
   }
 }
+
 @media only screen and (max-width:1000px) {
   #thawzin-custom a, .nav-link{
     font-size: 1rem;
@@ -554,6 +555,12 @@ header {
 
   .col-md-6:last-child {
     margin-bottom: 0;
+  }
+
+}
+@media only screen and (max-height: 860px) {
+  .mouse-icon {
+    display: none;
   }
 
 }
