@@ -420,6 +420,7 @@ header {
 }
 .mouse-icon {
   height: 2.5rem;
+  width: 2.5rem;
   margin: 0.4rem;
 }
 .footer-icon {
@@ -563,4 +564,11 @@ header {
     display: none;
   }
 
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 3), (min-device-pixel-ratio: 3) {
+  .mouse-icon {
+    font-size: 12px; 
+    width: 20px; 
+    height: 20px; 
+  }
 }
