@@ -43,7 +43,7 @@ header {
   align-items: center;
 }
 
-#thawzin-custom a {
+#thawzin-custom span {
   font-weight: bold;
   font-size: 1.2rem;
   font-family: "Comfortaa", cursive;
@@ -132,6 +132,7 @@ header {
 .foot-nav-link {
   color: var(--normal-font-color);
   font-size: 1rem;
+  text-decoration: none;
 }
 
 .footer-nav-link:hover {
@@ -497,7 +498,6 @@ header {
   display: grid;
   place-items: center;
   font-size: 30px;
-  font-weight: bold;
   color: var(--normal-font-color)
 }
 
